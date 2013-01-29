@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+
+function displayKPL()
+{
+var x=document.getElementById("mpg").value;
+var y=x * 0.425;
+kpl.value=y;
+}
+
+function displayMPG()
+{
+var a=document.getElementById("kplTWO").value;
+var b=a / 0.425;
+var c=b.toFixed(2);
+mpgTWO.value=c;
+}
+</script>
+</head>
+<font face="geneva">
+<div id="header" style="background-color:gold; text-align:center;">
+<h1 style="margin-bottom:0;">   MPG to KPM Conversion Calculator</h1></div>
+<br>
+<br>
+<br>
+<body style="background-color:purple;">
+<div align="center">
+<div style="color:gold">
+<input name="mpgInput" id="mpg" type="number" min="0" value="1"> MPG
+<input type="button" id="convert" value="Convert!" onclick="displayKPL()">
+<input name="kplInput" id="kpl" type="number" min="0" value="0.425"> KPL
+<br>
+<br>
+<input name="kplInputTWO" id="kplTWO" type="number" min="0" value="1"> KPL
+<input type="button" id="convertTWO" value="Convert!" onclick="displayMPG()">
+<input name="mpgInputTWO" id="mpgTWO" type="number" min="0"> MPG
+</div>
+<br>
+<br>
+<br>
+<img border="0" src="file:///Users/Caitlin/Desktop/duke_dog01002.jpg" alt="duke dog" width="304" height="228">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="footer" style="background-color:gold;clear:both;text-align:center;">
+GO DUKES</div>
+</geneva>
+</body>
+</html>
